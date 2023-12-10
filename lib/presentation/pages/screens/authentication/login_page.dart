@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pharmacy_app/data/services/profile_repository.dart';
+import 'package:pharmacy_app/generated/l10n.dart';
 import 'package:pharmacy_app/presentation/blocs/user_bloc/user_bloc.dart';
 import 'package:pharmacy_app/presentation/pages/screens/authentication/register_page.dart';
 import 'package:pharmacy_app/presentation/pages/widgets/bottom_navbar.dart';
@@ -69,7 +70,7 @@ class _LoginFormState extends State<LoginForm> {
               controller: _emailController,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 20),
-                hintText: 'Enter Email',
+                hintText: S.of(context).enterEmail,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(32.0),
                 ),
@@ -81,7 +82,7 @@ class _LoginFormState extends State<LoginForm> {
               obscureText: true,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 20),
-                hintText: 'Enter Password',
+                hintText: S.of(context).enterPassword,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(32.0),
                 ),
@@ -105,7 +106,7 @@ class _LoginFormState extends State<LoginForm> {
                   foregroundColor: Colors.white,
                   backgroundColor: Colors.redAccent,
                 ),
-                child: const Text('Login'),
+                child: Text(S.of(context).login),
               ),
             ),
             TextButton(
@@ -120,7 +121,7 @@ class _LoginFormState extends State<LoginForm> {
               style: TextButton.styleFrom(
                 foregroundColor: Colors.redAccent,
               ),
-              child: const Text("Don't have an account? Create one"),
+              child: Text(S.of(context).dontHaveAnAccountCreateOne),
             ),
             state.maybeWhen(
               orElse: () => const SizedBox(),
@@ -136,9 +137,9 @@ class _LoginFormState extends State<LoginForm> {
               error: () => Container(
                 color: Colors.red,
                 padding: const EdgeInsets.all(16.0),
-                child: const Text(
-                  'Email or password is incorrect',
-                  style: TextStyle(color: Colors.white),
+                child: Text(
+                  S.of(context).emailOrPasswordIsIncorrect,
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
             ),

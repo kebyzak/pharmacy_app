@@ -1,4 +1,7 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
+import 'package:pharmacy_app/generated/l10n.dart';
 import 'package:pharmacy_app/presentation/pages/screens/news_page.dart';
 import 'package:pharmacy_app/presentation/pages/screens/profile_page.dart';
 import 'package:pharmacy_app/presentation/pages/screens/qr_page.dart';
@@ -57,22 +60,22 @@ class _AnimatedBottomNavBarPageState extends State<AnimatedBottomNavBarPage> {
             curve: Curves.easeInOut,
           );
         },
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.newspaper_rounded),
-            label: 'News',
+            icon: const Icon(Icons.newspaper_rounded),
+            label: S.of(context).news,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.web_stories_rounded),
-            label: 'Stories',
+            icon: const Icon(Icons.web_stories_rounded),
+            label: S.of(context).stories,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.qr_code_rounded),
-            label: 'QR',
+            icon: const Icon(Icons.qr_code_rounded),
+            label: S.of(context).qr,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person_2_rounded),
-            label: 'Profile',
+            icon: const Icon(Icons.person_2_rounded),
+            label: S.of(context).profile,
           ),
         ],
       ),

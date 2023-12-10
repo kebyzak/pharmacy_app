@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
+import 'package:pharmacy_app/generated/l10n.dart';
 import 'package:pharmacy_app/presentation/blocs/news_bloc/news_bloc.dart';
 
 class NewsPage extends StatelessWidget {
@@ -15,12 +16,12 @@ class NewsPage extends StatelessWidget {
       body: BlocBuilder<NewsBloc, NewsState>(
         builder: (context, state) {
           return state.when(
-            initial: () => const Center(
-              child: Text('Initial state'),
+            initial: () => Center(
+              child: Text(S.of(context).initialState),
             ),
             loading: () => _buildLoading(context),
-            error: () => const Center(
-              child: Text('Error fetching News data.'),
+            error: () => Center(
+              child: Text(S.of(context).errorFetchingNewsData),
             ),
             success: (news) {
               final limitedNews = news.take(10).toList();

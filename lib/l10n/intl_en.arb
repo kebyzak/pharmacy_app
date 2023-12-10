@@ -1,0 +1,22 @@
+{
+  "news": "News",
+  "stories": "Stories",
+  "qr": "QR",
+  "profile": "Profile",
+  "initialState": "Initial state",
+  "errorFetchingProfileData": "Error fetching profile data.",
+  "name": "Name",
+  "email": "Email",
+  "errorFetchingNewsData": "Error fetching News data.",
+  "error": "Error",
+  "emailOrPasswordIsIncorrect": "Email or password is incorrect",
+  "enterYourNameAndSurname": "Enter your name and surname",
+  "enterYourEmail": "Enter your email",
+  "enterYourPassword": "Enter your Password",
+  "register": "Register",
+  "alreadyHaveAnAccountSignIn": "Already have an account? Sign In",
+  "enterEmail": "Enter Email",
+  "enterPassword": "Enter Password",
+  "login": "Login",
+  "dontHaveAnAccountCreateOne": "Don't have an account? Create one"
+}

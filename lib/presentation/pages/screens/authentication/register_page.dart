@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pharmacy_app/generated/l10n.dart';
 import 'package:pharmacy_app/presentation/blocs/user_bloc/user_bloc.dart';
 import 'package:pharmacy_app/presentation/pages/screens/authentication/login_page.dart';
 
@@ -30,9 +31,9 @@ class RegisterPage extends StatelessWidget {
                 builder: (context) => Container(
                   color: Colors.red,
                   padding: const EdgeInsets.all(16.0),
-                  child: const Text(
-                    'Email or password is incorrect',
-                    style: TextStyle(color: Colors.white),
+                  child: Text(
+                    S.of(context).emailOrPasswordIsIncorrect,
+                    style: const TextStyle(color: Colors.white),
                   ),
                 ),
               );
@@ -73,7 +74,7 @@ class RegisterPage extends StatelessWidget {
                           decoration: InputDecoration(
                             contentPadding:
                                 const EdgeInsets.symmetric(horizontal: 24.0),
-                            hintText: 'Enter your name and surname',
+                            hintText: S.of(context).enterYourNameAndSurname,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(32.0),
                             ),
@@ -85,7 +86,7 @@ class RegisterPage extends StatelessWidget {
                           decoration: InputDecoration(
                             contentPadding:
                                 const EdgeInsets.symmetric(horizontal: 24.0),
-                            hintText: 'Enter your email',
+                            hintText: S.of(context).enterYourEmail,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(32.0),
                             ),
@@ -98,7 +99,7 @@ class RegisterPage extends StatelessWidget {
                           decoration: InputDecoration(
                             contentPadding:
                                 const EdgeInsets.symmetric(horizontal: 24.0),
-                            hintText: 'Enter your Password',
+                            hintText: S.of(context).enterYourPassword,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(32.0),
                             ),
@@ -122,7 +123,7 @@ class RegisterPage extends StatelessWidget {
                               foregroundColor: Colors.white,
                               backgroundColor: Colors.redAccent,
                             ),
-                            child: const Text('Register'),
+                            child: Text(S.of(context).register),
                           ),
                         ),
                         TextButton(
@@ -137,7 +138,7 @@ class RegisterPage extends StatelessWidget {
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.redAccent,
                           ),
-                          child: const Text("Already have an account? Sign In"),
+                          child: Text(S.of(context).alreadyHaveAnAccountSignIn),
                         ),
                       ],
                     ),
