@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 // ignore: depend_on_referenced_packages
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pharmacy_app/models/news.dart';
-import 'package:pharmacy_app/services/news_service.dart';
+import 'package:pharmacy_app/data/services/news_service.dart';
+import 'package:pharmacy_app/domain/models/news.dart';
 
 part 'news_bloc.freezed.dart';
 part 'news_event.dart';

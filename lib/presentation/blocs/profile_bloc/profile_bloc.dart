@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:pharmacy_app/models/profile.dart';
-import 'package:pharmacy_app/services/profile_repository.dart';
 // ignore: depend_on_referenced_packages
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:pharmacy_app/data/services/profile_repository.dart';
+import 'package:pharmacy_app/domain/models/profile.dart';
 
 part 'profile_bloc.freezed.dart';
 part 'profile_event.dart';

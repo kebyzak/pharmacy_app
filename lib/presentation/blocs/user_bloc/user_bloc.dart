@@ -3,8 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // ignore: depend_on_referenced_packages
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pharmacy_app/models/profile.dart';
-import 'package:pharmacy_app/services/profile_repository.dart';
+import 'package:pharmacy_app/data/services/profile_repository.dart';
+import 'package:pharmacy_app/domain/models/profile.dart';
 
 part 'user_bloc.freezed.dart';
 part 'user_event.dart';

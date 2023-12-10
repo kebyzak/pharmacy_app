@@ -2,16 +2,16 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_app/blocs/news_bloc/news_bloc.dart';
-import 'package:pharmacy_app/blocs/profile_bloc/profile_bloc.dart';
-import 'package:pharmacy_app/blocs/qr_bloc/qr_bloc.dart';
-import 'package:pharmacy_app/blocs/user_bloc/user_bloc.dart';
-import 'package:pharmacy_app/pages/authentication/login_page.dart';
+import 'package:pharmacy_app/data/services/news_service.dart';
+import 'package:pharmacy_app/data/services/profile_repository.dart';
 import 'package:pharmacy_app/firebase_options.dart';
-import 'package:pharmacy_app/pages/screens/profile_page.dart';
-import 'package:pharmacy_app/services/news_service.dart';
-import 'package:pharmacy_app/services/profile_repository.dart';
 import 'package:dio/dio.dart';
+import 'package:pharmacy_app/presentation/blocs/news_bloc/news_bloc.dart';
+import 'package:pharmacy_app/presentation/blocs/profile_bloc/profile_bloc.dart';
+import 'package:pharmacy_app/presentation/blocs/qr_bloc/qr_bloc.dart';
+import 'package:pharmacy_app/presentation/blocs/user_bloc/user_bloc.dart';
+import 'package:pharmacy_app/presentation/pages/screens/authentication/login_page.dart';
+import 'package:pharmacy_app/presentation/pages/screens/profile_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

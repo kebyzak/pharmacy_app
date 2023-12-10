@@ -1,4 +1,4 @@
-import 'package:pharmacy_app/models/news.dart';
+import 'package:pharmacy_app/domain/models/news.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
 

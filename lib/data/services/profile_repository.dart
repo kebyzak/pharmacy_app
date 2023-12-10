@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:pharmacy_app/models/profile.dart';
+import 'package:pharmacy_app/domain/models/profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileRepository {

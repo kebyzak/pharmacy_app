@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_app/blocs/user_bloc/user_bloc.dart';
-import 'package:pharmacy_app/pages/authentication/register_page.dart';
-import 'package:pharmacy_app/pages/widgets/bottom_navbar.dart';
-import 'package:pharmacy_app/services/profile_repository.dart';
+import 'package:pharmacy_app/data/services/profile_repository.dart';
+import 'package:pharmacy_app/presentation/blocs/user_bloc/user_bloc.dart';
+import 'package:pharmacy_app/presentation/pages/screens/authentication/register_page.dart';
+import 'package:pharmacy_app/presentation/pages/widgets/bottom_navbar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pharmacy_app/pages/screens/news_page.dart';
-import 'package:pharmacy_app/pages/screens/profile_page.dart';
-import 'package:pharmacy_app/pages/screens/qr_page.dart';
-import 'package:pharmacy_app/pages/screens/stories_page.dart';
+import 'package:pharmacy_app/presentation/pages/screens/news_page.dart';
+import 'package:pharmacy_app/presentation/pages/screens/profile_page.dart';
+import 'package:pharmacy_app/presentation/pages/screens/qr_page.dart';
+import 'package:pharmacy_app/presentation/pages/screens/stories_page.dart';
 
 class AnimatedBottomNavBarPage extends StatefulWidget {
   const AnimatedBottomNavBarPage({super.key, required this.initialIndex});

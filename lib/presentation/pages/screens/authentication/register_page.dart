@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_app/blocs/user_bloc/user_bloc.dart';
-import 'package:pharmacy_app/pages/authentication/login_page.dart';
+import 'package:pharmacy_app/presentation/blocs/user_bloc/user_bloc.dart';
+import 'package:pharmacy_app/presentation/pages/screens/authentication/login_page.dart';
 
 class RegisterPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();

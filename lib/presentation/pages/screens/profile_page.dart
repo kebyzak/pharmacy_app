@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_app/blocs/profile_bloc/profile_bloc.dart';
+import 'package:pharmacy_app/presentation/blocs/profile_bloc/profile_bloc.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
